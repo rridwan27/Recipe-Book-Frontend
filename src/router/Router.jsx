@@ -11,6 +11,7 @@ import MyRecipes from "../pages/MyRecipes/MyRecipes";
 import AddRecipe from "../pages/AddRecipe/AddRecipe";
 import PrivateRoute from "../providers/PrivateRoute";
 import RecipeDetails from "../pages/RecipeDetails/RecipeDetails";
+import Dashboard from "../pages/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         Component: Home,
         loader: () =>
           fetch(
-            "https://server-recipe-book-theta.vercel.app/recipes/top?limit=6"
+            "https://server-recipe-book-theta.vercel.app/recipes/top?limit=8"
           ),
       },
       {
@@ -59,6 +60,14 @@ const router = createBrowserRouter([
           ),
       },
     ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
   },
   {
     path: "auth",

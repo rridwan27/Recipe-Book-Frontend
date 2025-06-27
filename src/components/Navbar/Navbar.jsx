@@ -74,6 +74,16 @@ const Navbar = () => {
       >
         Sign Up
       </NavLink>
+      <NavLink
+        to="/dashboard"
+        className={({ isActive }) =>
+          isActive
+            ? "mx-3 my-2 text-violet-600 font-semibold text-base"
+            : "mx-3 my-2 nav-text text-base"
+        }
+      >
+        Dashboard
+      </NavLink>
     </>
   );
 
@@ -86,7 +96,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="shadow-md backdrop-blur-md border-b border-white/10 z-[999] relative">
+    <div className="shadow-md backdrop-blur-md border-b border-white/10 z-[999]  sticky top-0">
       <div className="navbar container mx-auto max-w-7xl px-4">
         {/* START */}
         <div className="navbar-start">

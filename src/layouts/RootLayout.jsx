@@ -6,8 +6,6 @@ import { Toaster } from "react-hot-toast";
 const RootLayout = () => {
   return (
     <div className="flex flex-col min-h-screen ">
-      {" "}
-      {/* /bg-[linear-gradient(135deg,#0f172a,#1e293b)]/ */}
       <Navbar />
       <div className="flex-grow">
         <Outlet />

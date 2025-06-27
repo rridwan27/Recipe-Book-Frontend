@@ -40,7 +40,7 @@ const Home = () => {
           <div className="border-b-2 border-violet-600 w-[200px] mx-auto"></div>
         </div>
         <Fade cascade damping={0.1} triggerOnce>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {recipes.map((recipe) => (
               <div
                 className="card bg-base-100 w-full shadow-sm"

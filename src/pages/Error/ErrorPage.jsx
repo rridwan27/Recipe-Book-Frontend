@@ -6,7 +6,7 @@ const ErrorPage = () => {
       <div className="flex flex-col border border-secondary p-6 md:p-12 rounded-2xl items-center justify-center gap-6 w-full max-w-xl text-center">
         {/* Image First */}
         <img
-          src="https://i.redd.it/4og0ifrznkn51.jpg"
+          src="https://deep-image.ai/blog/content/images/2024/04/e8b03cd2-bbf1-4153-9e33-403a2e0f8ea3-generated.png"
           className="w-full max-w-md object-cover rounded-xl shadow-lg"
           alt="error"
         />
