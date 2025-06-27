@@ -9,7 +9,7 @@ This is the **frontend** of the Recipe Book application, built with **React 19**
 
 ## ⚙️ Features
 
-- 🔥 Built with React 19 and Vite for fast performance
+- 🔥 Built with React 19 and Vite
 - 🎨 Tailwind CSS & DaisyUI for modern styling
 - 🔐 Authentication with Firebase
 - 💾 Data storage via MongoDB (API-backed integration)
